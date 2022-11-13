@@ -1,0 +1,6 @@
+# CUANDO SE SUBE AL REPOSITORIO, SE IGNORA LA SUBIDA DE ESTOS ARCHIVOS
+# node_modules: Carpeta en dónde están instalados todas las dependencias del proyecto
+# .env: Variables de entorno que por seguirdad no son compartidas, en este caso, la Base de Datos y el Puerto
+
+node_modules
+.env
