@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "Este proyecto se ha realizado en base al desafío BSale",
   "main": "index.js",
+  "engines": {
+    "node": "16.x"
+  },
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "start": "node index.js"
   },
   "keywords": [
     "nodemon",
