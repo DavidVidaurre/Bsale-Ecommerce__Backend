@@ -3,7 +3,7 @@
 Este proyecto es una API para un ecommerce de bebidas y snacks que se ha realizado en base a un desafío dispuesto por la empresa Bsale. Realiza peticiones al servidor para obtener productos y categorías.
 
 ## Variables de Entorno
-
+***
 Para ejecutar este proyecto, tendrá que añadir las siguientes variables de entorno a su archivo .env
 
 Estas variables son para la conexión a tu base de datos
@@ -18,8 +18,26 @@ Estas variables son para la conexión a tu base de datos
 
 `PORT`
 
-## Referencia API
+## Tecnologías
+***
+* [NodeJS](https://nodejs.org/en/): Version 16.8.0 
+* [Express](https://expressjs.com/es/): Version 4.18.2
 
+## Instalación
+***
+```bash
+$ git clone https://github.com/DavidVidaurre/Bsale-Ecommerce__Backend
+$ npm install
+```
+
+## Ejecución
+***
+```bash
+  $ npm start
+```
+
+## Referencia API
+***
 ### Productos
 
 #### Obtener todos los productos
