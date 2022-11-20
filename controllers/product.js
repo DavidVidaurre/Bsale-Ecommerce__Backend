@@ -130,7 +130,7 @@ const getProductsByDecreasingName = async (req, res) => {
 const getProductsByHigherPrice = async (req, res) => {
     try {
         const connection = await getConnection();
-        const products = await connection.query('SELECT *, price - price*discount/100 as price FROM product ORDER BY price DESC');
+        const products = await connection.query('SELECT *, price - price*discount/100 as priceWithDiscount FROM product ORDER BY priceWithDiscount DESC');
 
         if(products.length > 0){
             return res.json({
@@ -151,7 +151,7 @@ const getProductsByHigherPrice = async (req, res) => {
 const getProductsByLowerPrice = async (req, res) => {
     try {
         const connection = await getConnection();
-        const products = await connection.query('SELECT *, price - price*discount/100 as price FROM product ORDER BY price ASC');
+        const products = await connection.query('SELECT *, price - price*discount/100 as priceWithDiscount FROM product ORDER BY priceWithDiscount ASC');
 
         if(products.length > 0){
             return res.json({
