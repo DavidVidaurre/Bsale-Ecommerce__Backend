@@ -173,7 +173,7 @@ const getProductsBetweenPrices = async (req, res) => {
     try {
         const connection = await getConnection();
         const { lowerPrice, higherPrice } = req.body;
-        const products = await connection.query(`SELECT *, price - price*discount/100 as price FROM product WHERE price BETWEEN ${lowerPrice} AND ${higherPrice} ORDER BY price ASC`);
+        const products = await connection.query(`SELECT *, price - price*discount/100 as priceWithDiscount FROM product WHERE price BETWEEN ${lowerPrice} AND ${higherPrice} ORDER BY price ASC`);
 
         if(products.length > 0){
             return res.json({
